@@ -31,4 +31,4 @@ while more.upper() != 'N':
     print(f'''
 Here\'s your new password: {password}
     ''')
-    more = input('N to quit and anything else for another password: ')
+    more = input('Press N to quit and anything else for another password: ')
