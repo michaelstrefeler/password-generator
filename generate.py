@@ -23,12 +23,12 @@ while True:
     except ValueError:
         print("Invalid input. Choose any number greater than 7")
 
-more = 'Y'
-while more.upper() != 'N':
+more = 'continue'
+while more.upper() != 'Q':
     # Generate random password
     password = ''.join(SystemRandom().choices(
         ascii_uppercase + ascii_lowercase + digits, k=length))
     print(f'''
 Here\'s your new password: {password}
     ''')
-    more = input('Press N to quit and anything else for another password: ')
+    more = input('Press Q to quit and anything else for another password: ')
