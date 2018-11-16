@@ -28,7 +28,5 @@ while more.upper() != 'Q':
     # Generate random password
     password = ''.join(SystemRandom().choices(
         ascii_uppercase + ascii_lowercase + digits, k=length))
-    print(f'''
-Here\'s your new password: {password}
-    ''')
+    print(f'Here\'s your new password: {password}')
     more = input('Press Q to quit and anything else for another password: ')
